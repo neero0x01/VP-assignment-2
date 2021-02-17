@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <Pane layoutX="10.0" layoutY="77.0" prefHeight="695.0" prefWidth="1080.0" style="-fx-background-color: #f4f4f4;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="97.0">
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="559.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: #fff; -fx-border-color: #333;">
+         <children>
+            <Label fx:id="courseName1" prefHeight="26.0" text="Course Name">
+               <font>
+                  <Font name="Operator Mono Medium" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="of1" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#getFile" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: rgba(77,102,204,0.7);" text="Open File" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Operator Mono Bold Italic" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5247319936752319" green="0.5750487446784973" blue="0.7763158082962036" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.5764706134796143" blue="0.7764706015586853" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label prefHeight="17.0" prefWidth="250.0" text="Assignment - 1">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="box1field1" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Quiz - 1" />
+            <JFXTextField fx:id="box1field2" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Quiz - 2" />
+            <JFXTextField fx:id="box1field3" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Assignment - 2" />
+            <JFXTextField fx:id="box1field4" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="CP - 1" />
+            <JFXTextField fx:id="box1field5" />
+            <JFXButton fx:id="sf1" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#saveFile" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: rgba(77,102,204,0.7);" text="Save File" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Operator Mono Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.42352941632270813" green="0.4901960790157318" blue="0.7568627595901489" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+         </padding></VBox>
+      <JFXButton fx:id="btnSaveAll" alignment="CENTER" buttonType="RAISED" layoutX="444.0" layoutY="606.0" onAction="#saveAll" prefHeight="55.0" prefWidth="193.0" ripplerFill="#333333" style="-fx-background-color: rgba(77,102,204,0.7); -fx-text-fill: #f4f4f4;" text="Save All" textAlignment="CENTER">
+         <font>
+            <Font name="Operator Mono Bold Italic" size="15.0" />
+         </font>
+      </JFXButton>
+      <VBox alignment="CENTER" layoutX="766.0" layoutY="14.0" prefHeight="559.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: #fff; -fx-border-color: #333;">
+         <children>
+            <Label fx:id="courseName3" prefHeight="26.0" text="Course Name">
+               <font>
+                  <Font name="Operator Mono Medium" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="of3" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#getFile" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: rgba(77,102,204,0.7);" text="Open File" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Operator Mono Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.42352941632270813" green="0.4901960790157318" blue="0.7568627595901489" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label prefHeight="17.0" prefWidth="250.0" text="CP - 1">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="box3field1" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Quiz - 1" />
+            <JFXTextField fx:id="box3field2" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Assignment - 1" />
+            <JFXTextField fx:id="box3field3" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="CP - 2" />
+            <JFXTextField fx:id="box3field4" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="CP - 3" />
+            <JFXTextField fx:id="box3field5" />
+            <JFXButton fx:id="sf3" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#saveFile" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: rgba(77,102,204,0.7);" text="Save File" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Operator Mono Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.42352941632270813" green="0.4901960790157318" blue="0.7568627595901489" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="390.0" layoutY="14.0" prefHeight="559.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: #fff; -fx-border-color: #333;">
+         <children>
+            <Label fx:id="courseName2" prefHeight="26.0" text="Course Name">
+               <font>
+                  <Font name="Operator Mono Medium" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="of2" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#getFile" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: rgba(77,102,204,0.7);" text="Open File" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Operator Mono Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5254902243614197" green="0.5764706134796143" blue="0.7764706015586853" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label prefHeight="17.0" prefWidth="250.0" text="Assignment - 1">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="box2field1" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Assignment -2" />
+            <JFXTextField fx:id="box2field2" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="CP - 1" />
+            <JFXTextField fx:id="box2field3" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="CP - 2" />
+            <JFXTextField fx:id="box2field4" />
+            <Label prefHeight="17.0" prefWidth="250.0" text="Quiz - 1" />
+            <JFXTextField fx:id="box2field5" />
+            <JFXButton fx:id="sf2" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#saveFile" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: rgba(77,102,204,0.7);" text="Save File" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Operator Mono Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.42352941632270813" green="0.4901960790157318" blue="0.7568627595901489" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+         </padding>
+      </VBox>
+   </Pane>
+   <Label alignment="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="55.0" prefWidth="1080.0" text="My Assessment Marks">
+      <font>
+         <Font name="Operator Mono Bold Italic" size="36.0" />
+      </font>
+   </Label>
+</AnchorPane>
